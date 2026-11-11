@@ -74,15 +74,40 @@ Ba mốc M1, M2, M3 để giữ nhịp và cứu nhóm kẹt: TA đi qua bàn, n
 
 ## Nộp bài
 
-Một thư mục (hoặc một repo, nếu giảng viên yêu cầu) gồm:
+### Tạo repo mới, không fork repo đề bài
+
+Nhóm tạo một repo GitHub **hoàn toàn mới và trống**. Không fork, không clone repo này rồi push lên: repo nộp bài chỉ chứa bài của nhóm, để người chấm không phải lọc đề ra khỏi bài.
+
+Nhóm chỉ cần lấy **đúng một file** từ repo này: `03-spec-template.md`, copy vào repo mình và đặt tên `spec.md`. Mọi thứ còn lại là tài liệu đọc, mở tại đây là đủ.
+
+### Cách đặt tên repo
 
 ```
-bai-nop/
+K5-<lớp>-Day05-<track>-<tên nhóm>
+```
+
+| Ví dụ | Của nhóm nào |
+|---|---|
+| `K5-L3A-Day05-T3-BayNhanh` | Lớp L3A · track T3 Du lịch · nhóm BayNhanh |
+| `K5-L3B-Day05-T5-ViAnToan` | Lớp L3B · track T5 Ví điện tử · nhóm ViAnToan |
+
+**Bốn phần đầu bắt buộc đúng.** Lớp là `L3A` hoặc `L3B`; track là `T1` đến `T5`, đúng track nhóm đã nhận.
+
+**Tên nhóm ở cuối đặt gì cũng được**: viết liền, không dấu, không khoảng trắng.
+
+**Repo phải để công khai.** Thử mở bằng cửa sổ ẩn danh: mở được thì mới đúng. Để riêng tư là người chấm không chấm được bài.
+
+### Cấu trúc repo
+
+```
+K5-L3A-Day05-T3-BayNhanh/
 ├── spec.md          ← bài nộp theo 03-spec-template.md, bảng thành viên ở đầu
-└── prototype/       ← link prototype, hoặc file HTML, kèm 1–2 ảnh có đánh số các chỗ
+└── prototype/       ← file HTML hoặc file README.md chứa link prototype, kèm 1–2 ảnh có đánh số các chỗ
 ```
 
-Nộp trước giờ demo. Cách nộp và hạn nộp: giảng viên thông báo trong buổi.
+Bảng thành viên ở đầu `spec.md` copy từ đầu file README này. **Mã học viên phải đúng**: đây là căn cứ đối chiếu điểm.
+
+Nộp **link repo** trước giờ demo. Kênh nộp và hạn nộp chính xác: giảng viên thông báo trong buổi.
 
 ## Chấm điểm
 

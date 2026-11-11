@@ -186,6 +186,7 @@ Chỉ chấm trên những gì đã có ở chặng 2–5 — không làm thêm.
 
 ## 7.3 Checklist nộp *(trước demo)*
 
-- [ ] `spec.md` theo `03-spec-template.md`, bảng thành viên ở đầu
+- [ ] Repo mới, công khai, đặt tên đúng `K5-<lớp>-Day05-<track>-<tên nhóm>` (README → Nộp bài); mở được bằng cửa sổ ẩn danh
+- [ ] `spec.md` theo `03-spec-template.md`, bảng thành viên ở đầu, mã học viên đúng
 - [ ] `prototype/`: link hoặc file, kèm 1–2 ảnh đánh số các chỗ
 - [ ] Cả nhóm trả lời được: "Hành động này sai thì ai mất gì?" · "Lỗi nguy hiểm nhất là gì?" · "Phần bạn làm là gì?"
