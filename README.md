@@ -107,7 +107,7 @@ K5-L3A-Day05-T3-BayNhanh/
 
 Bảng thành viên ở đầu `spec.md` copy từ đầu file README này. **Mã học viên phải đúng**: đây là căn cứ đối chiếu điểm.
 
-Nộp **link repo** trước giờ demo. Kênh nộp và hạn nộp chính xác: giảng viên thông báo trong buổi.
+Nộp **link repo** trước **23:59 ngày 12/11/2026** (lớp L3A) · trước **23:59 ngày 13/11/2026** (lớp L3B). Kênh nộp: giảng viên thông báo trong buổi.
 
 ## Chấm điểm
 

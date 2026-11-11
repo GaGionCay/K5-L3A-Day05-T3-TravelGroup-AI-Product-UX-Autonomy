@@ -186,7 +186,7 @@ Chỉ chấm trên những gì đã có ở chặng 2–5 — không làm thêm.
 
 **Đủ khi:** người xem bấm hoặc nghe được ca khó, và nhóm trả lời ca lạ theo đúng mức tự chủ đã đặt.
 
-## 7.3 Checklist nộp *(trước demo)*
+## 7.3 Checklist nộp *(trước 23:59 ngày lab của lớp)*
 
 - [ ] Repo mới, công khai, đặt tên đúng `K5-<lớp>-Day05-<track>-<tên nhóm>` (README → Nộp bài); mở được bằng cửa sổ ẩn danh
 - [ ] `spec.md` theo `03-spec-template.md`, bảng thành viên ở đầu, mã học viên đúng
