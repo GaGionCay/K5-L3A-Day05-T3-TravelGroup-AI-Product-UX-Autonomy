@@ -38,7 +38,7 @@
 | Mỗi kịch bản đắt nhất có câu AI nói nguyên văn, cái người dùng thấy, bước tiếp theo, người được báo | 6 |
 | **Lập luận:** chọn hỏi lại / trả lời kèm giới hạn / chuyển người — có phương án đã loại và vì sao | 8 |
 | 2–3 nguyên tắc HAX/PAIR, mỗi nguyên tắc trỏ vào chỗ cụ thể (không chỉ ghi tên) | 5 |
-| Phân biệt được loại lỗi (hệ thống / người dùng / cảm nhận) và cách nói, cách sửa khác nhau theo loại | 3 |
+| Phân biệt được loại lỗi (hệ thống / người dùng / ngữ cảnh) và cách nói, cách sửa khác nhau theo loại | 3 |
 | Chỉ ra một lỗi sửa câu chữ không cứu được và thiết kế cứu nó thế nào | 3 |
 
 ### R4 · Mức tự chủ — 25

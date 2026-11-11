@@ -12,7 +12,7 @@
 - **Chậm, huỷ chuyến (Vietnam Airlines):** chậm từ 4 giờ trở lên do lỗi hãng thì được hoàn và bồi thường ứng trước; **bất khả kháng (thời tiết, an ninh…) thì miễn bồi thường**.
 - Trang trợ giúp công khai không mô tả trợ lý AI làm các bước trên thay khách: khách tự bấm qua từng bước.
 
-Nguồn: <https://www.traveloka.com/vi-vn/reschedule/flight> · <https://www.traveloka.com/en-en/help/flight/flight-managing-booking/flight-changes/reschedule/how-do-i-reschedule-my-flight> · <https://www.traveloka.com/en-vn/help/flight/flight-managing-booking/flight-changes/refund/about-my-refund-type> · <https://www.thegioididong.com/game-app/cach-doi-lich-bay-ve-may-bay-traveloka-tien-loi-nhanh-chong-1559955> · <https://www.vietnamairlines.com/vn/en/help-desk/common-topics/Ticket-change/doi-chuyen-bay-khong-tu-nguyen-do-VNA-thay-doi-lich-bay> · <https://www.vietnamairlines.com/vn/vi/support/customer-service-plan>
+Nguồn: <https://www.traveloka.com/vi-vn/reschedule/flight> · <https://www.traveloka.com/en-en/help/flight/flight-managing-booking/flight-changes/reschedule/how-do-i-reschedule-my-flight> · <https://www.traveloka.com/en-vn/help/flight/flight-managing-booking/flight-changes/refund/about-my-refund-type> · <https://www.thegioididong.com/game-app/cach-doi-lich-bay-ve-may-bay-traveloka-tien-loi-nhanh-chong-1559955> · <https://www.vietnamairlines.com/vn/vi/help-desk/common-topics/Ticket-change/doi-chuyen-bay-khong-tu-nguyen-do-VNA-thay-doi-lich-bay> · <https://www.vietnamairlines.com/vn/vi/support/customer-service-plan>
 
 Nhóm tự tìm hiểu thêm sản phẩm thật nếu muốn (đọc trang trợ giúp ở trên, mở app nếu có sẵn): không cần chụp màn hình, không chat với trợ lý thật, không nhập dữ liệu thật.
 

@@ -78,7 +78,7 @@ Chỉ làm cho **2 kịch bản đắt nhất**.
 3. Người dùng **thấy** gì ngoài câu chữ: độ chắc, bằng chứng AI dựa vào, nút nào, nhãn nào?
 4. Người dùng **làm gì tiếp** được: sửa, bỏ qua, hỏi người, hoàn tác? Nếu họ không làm gì thì chuyện gì xảy ra?
 5. **Ai được báo**, sau bao lâu? Người đó thấy gì?
-6. Lỗi này là lỗi **hệ thống**, lỗi **người dùng**, hay lỗi do người dùng **cảm nhận**? Điều đó đổi cách bạn nói xin lỗi thế nào?
+6. Lỗi này là lỗi **hệ thống**, lỗi **người dùng**, hay lỗi **ngữ cảnh** (hệ thống chạy đúng thiết kế nhưng sai với tình huống của người dùng — PAIR gọi là *context error*)? Điều đó đổi cách bạn nói xin lỗi và cách sửa thế nào? Lỗi ngữ cảnh thường phải sửa thiết kế, không chỉ sửa câu chữ.
 7. Có lỗi nào mà **sửa câu chữ không cứu được**, chỉ thiết kế mới cứu được (AI nói đã làm việc nó không có quyền; AI dẫn nguồn không có)?
 
 ## 3.2 Bốn đường đi của trải nghiệm
@@ -87,7 +87,7 @@ Với lát cắt của nhóm, nghĩ đủ bốn đường: **happy path** · **l
 
 ## 3.3 Nguyên tắc HAX/PAIR — chọn 2–3, mỗi cái trỏ vào chỗ cụ thể
 
-- **G1 — Làm rõ hệ thống làm được gì.** · **G2 — Làm rõ nó làm tốt đến đâu.**
+- **G1 — Làm rõ hệ thống làm được gì.** · **G2 — Làm rõ nó làm tốt đến đâu.** (Tại Việt Nam, Điều 11 khoản 1 Luật Trí tuệ nhân tạo 134/2025/QH15 — trách nhiệm minh bạch, hiệu lực 01/3/2026 — yêu cầu hệ thống AI tương tác trực tiếp cho người dùng biết họ đang làm việc với AI; xem [Công báo](https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694.htm).)
 - **G10 — Thu hẹp phạm vi khi nghi ngờ.** Không chắc → hỏi lại một câu, hoặc trả lời kèm giới hạn — không làm liều.
 - **G8 — Gạt bỏ dễ dàng.** · **G9 — Sửa dễ dàng.** · **G11 — Giải thích vì sao.**
 - **G15 — Mời feedback chi tiết** ("sai chỗ nào?").
@@ -118,6 +118,8 @@ Viết như sau: "**G10** → câu AI nói ở kịch bản 1: hỏi lại 'bạ
 | **cấm** | Không thuộc thẩm quyền của AI, hoặc sai thì không đảo được mà một bước xác nhận cũng không đủ để chặn |
 
 Lý do viết theo cost-of-error: *sai thì ai chịu gì, sửa đắt hay rẻ* — không viết "vì tiện", không viết "vì AI giỏi".
+
+Trước khi chốt, tự hỏi: với tool cần người duyệt, **ai** duyệt, người đó **thấy gì** trước khi bấm, và nếu **không ai duyệt kịp** thì chuyện gì xảy ra?
 
 ## 4.3 Làm thế nào
 
