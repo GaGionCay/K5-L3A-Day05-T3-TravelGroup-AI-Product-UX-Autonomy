@@ -6,7 +6,7 @@
 |---|---|---|
 | Chử Thị Ánh | 2A20603360 | Phụ trách §1–§2: lát cắt, phạm vi và kịch bản rủi ro |
 | Nguyễn Thế Cường | 2A202603355 | Phụ trách §3–§4: viết phản hồi AI nguyên văn, bước tiếp theo và người được báo cho 2 ca đắt nhất; xác định mức tự chủ của 5 tool, giải thích theo cái giá khi sai; tổng hợp những điểm nhóm bất đồng. |
-|  |  |  |
+| Hoàng Ngọc Minh Trí | 2A202603379 |  |
 
 ## §1. Lát cắt & phạm vi
 - Lát cắt: Trong **Đặt chỗ của tôi**, khi **hành khách** vừa nhận tin chuyến bay bị huỷ và nhắn hỏi, **AI đề xuất và giữ chỗ chuyến thay thế, hỏi lại cho rõ, đổi vé, hay chuyển nhân viên**, để khách tới nơi kịp mà không mất vé hay tiền vì một thao tác không đảo lại được.
@@ -117,14 +117,96 @@ Hai ca này được ưu tiên vì thêm một nút xác nhận chuyến và hà
 
 Với `doi_chuyen_bay`, nhóm không hứa “AI tự đổi vé cho bạn”. Lời hứa là: **AI tìm và có thể giữ chuyến phù hợp; khách xem lại chuyến, hành khách và xác nhận trước khi vé được đổi.**
 
-## §5. Prototype  (chặng 5)
-- Link hoặc file · công cụ · phần nào mock · có lời gọi AI thật không.
-- 1–2 ảnh có đánh số; mỗi số: thể hiện gì · nguyên tắc HAX/PAIR nào · mức tự chủ nào.
-- Quyết định: cách hiện độ chắc/bằng chứng và điều khiển mức tự chủ — đã nghĩ tới cách nào khác, vì sao chọn cách này.
+## §5. Prototype — hội thoại theo hai kịch bản mới
 
-## §6. Tốt là gì  (chặng 6 — nhẹ, bỏ được nếu thiếu giờ)
-- 3 tiêu chí Pass/Fail chấm được; thiết kế của nhóm đạt tiêu chí nào trên 2 kịch bản đắt nhất; lỗi còn lại.
+- **Mở demo:** Có thể mở qua [prototype/index.html](prototype/index.html), trang này dẫn tới cùng bản demo.
+- **Công cụ:** HTML/CSS/JavaScript tĩnh, chạy trực tiếp bằng trình duyệt. Giao diện chat giữ lịch sử tin nhắn, các thẻ giữ chỗ và bản tóm tắt lần gửi.
+- **Phần mock:** đặt chỗ TRV-7Q2K, tool tra cứu/giữ/đổi/chuyển người, đồng hồ tình huống và lỗi mất phản hồi. Chat phản hồi theo kịch bản, chưa gọi AI thật. Nhật ký thể hiện các lần gọi tool mô phỏng.
+- **Ca chính:** có nút chọn “Ca #2 · Giữ chỗ hết hạn” và “Ca #3 · Mất phản hồi đổi vé”. Tab “Ca bình thường” chứa 8 ca còn lại (#1, #4–#10), mỗi nút mở một hội thoại với fixture riêng. Nút “Mở luồng đổi vé thành công” dùng để đối chiếu mức tự chủ.
+- **Thời gian:** đồng hồ dựng bắt đầu lúc 15:00 ngày 12/11/2026 theo múi giờ Việt Nam. Nút “Quay lại sau 25 phút” đưa thời gian tới 25 phút sau lúc giữ, đồng thời kích hoạt hết hạn. Đồng hồ chạy nhanh 60 lần, mỗi giây thật tương ứng một phút mô phỏng. Countdown vẫn hiển thị từ 20:00 và tự hết hạn sau 20 giây thật. Nút nhảy 25 phút vẫn dùng được để đi thẳng tới ca hết hạn.
+
+### Ảnh 1 cần chụp — #2, thẻ giữ chỗ hết hạn
+
+1. Chọn ca #2, chọn BM 201 cho cả hai.
+2. Mở “Điều khiển demo và nhật ký tool”, bấm “Quay lại sau 25 phút”.
+3. Bấm “Tôi quay lại xác nhận”.
+4. Chụp đoạn chat có thẻ cũ bị khoá, thời điểm giữ 15:00, hết hạn 15:20, hiện tại 15:25 và nút “② Tra cứu lại”. Nếu thao tác chậm hơn một phút, các mốc hiển thị tăng tương ứng với đồng hồ dựng.
+
+Các chú thích đã có ngay trong demo gồm **① G11** tại thời điểm giữ/hết hạn, **② G9** tại nút tra cứu lại và **③ G8** tại nút gặp nhân viên. Thẻ cũ được giữ trong lịch sử, xác nhận cũ không phát sinh lệnh đổi. Sau tra cứu lại, khách chọn và duyệt một thẻ giữ mới.
+
+### Ảnh 2 cần chụp — #3, kết quả đổi chưa rõ
+
+1. Chọn ca #3, ô “Mất phản hồi lần đổi tiếp theo” tự bật.
+2. Chọn BM 205 cho cả hai, tích ô duyệt và bấm “Xác nhận đổi vé”.
+3. Sau phản hồi mất kết nối mô phỏng, bấm “Gửi đổi lần nữa”.
+4. Chụp đoạn chat có trạng thái “④ Đang xác minh kết quả”, bản tóm tắt “⑤” ghi chuyến, hành khách, giờ duyệt/gửi và thông báo “⑥” chuyển nhân viên. Nút gửi lại lệnh đổi bị khoá, ô chat vẫn nhận tin nhắn.
+
+**④ G10** thể hiện giới hạn hành động khi chưa rõ kết quả. **⑤ G11** cho khách kiểm tra lần gửi đã biết. **⑥ PAIR Errors + Graceful Failure** thể hiện chuyển người kèm ngữ cảnh. Nhật ký chỉ có một lần gọi `doi_chuyen_bay` cho yêu cầu đang xác minh, kể cả khi khách yêu cầu gửi lại.
+
+**Tình trạng ảnh:** chưa có ảnh chụp trên trình duyệt. Cần bổ sung hai ảnh theo hướng dẫn trên trước khi nộp.
+
+### Quyết định thiết kế
+
+Chọn hội thoại có lịch sử để khách đối chiếu yêu cầu, bản duyệt và trạng thái hiện tại. Thẻ cũ hiển thị rõ đã hết hiệu lực, đường đi tiếp nằm tại nút tra cứu lại. Khi mất phản hồi, bản tóm tắt lần gửi vẫn hiện để khách và nhân viên có cùng căn cứ.
+
+Nhóm cân nhắc cho bấm gửi lại sau lỗi kết nối nhưng loại vì track chưa mô tả backend chống lặp (#3). Nhóm cũng loại tự gia hạn thẻ giữ vì tool chỉ giữ 20 phút (#2). Ca bình thường được giữ bước duyệt ngắn để khách tiếp tục ngay khi có đủ thông tin và chỗ giữ còn hiệu lực.
+
+## §6. Tốt là gì
+
+| Tiêu chí | Pass | Fail |
+|---|---|---|
+| C1 — Hiệu lực xác nhận | Đúng chuyến, đúng hành khách, thẻ giữ còn hạn khi gọi đổi. Hết 20 phút thì khoá duyệt cũ và yêu cầu tra cứu/chọn/duyệt mới. | Dùng thẻ hết hạn hoặc duyệt từ lựa chọn cũ để đổi. |
+| C2 — Kiểm soát gửi lặp | Chỉ gửi một lệnh cho một yêu cầu đang xử lý. Mất phản hồi thì giữ trạng thái chưa xác minh và khoá đổi tiếp. | Tự gửi lại hoặc báo thành công/thất bại khi kết quả chưa rõ. |
+| C3 — Trạng thái và đường xử lý | #2 có thời điểm giữ/hết hạn và tra cứu lại. #3 có bản tóm tắt lần gửi và chuyển nhân viên kèm lịch sử. | Khách bị kẹt, thấy trạng thái sai hoặc nhân viên thiếu căn cứ xác minh. |
+
+### Kết quả kiểm tra logic hiện có
+
+Chạy `node tests/demo.test.cjs` tại thư mục repo. Bộ kiểm tra mô phỏng các phần DOM cần thiết và thao tác qua hàm xử lý của demo.
+
+| Ca | Kết quả | Căn cứ kiểm tra |
+|---|---|---|
+| #2 — xác nhận sau 25 phút | Pass logic C1 và C3 | Đồng hồ tới 15:25, thẻ hết hạn 15:20. Callback xác nhận cũ bị chặn cả trước lẫn sau khi tạo thẻ mới. Chỉ duyệt thẻ mới mới gọi đổi. |
+| #3 — mất phản hồi sau gửi đổi | Pass logic C2 và C3 | Trạng thái đang xác minh, ô chat còn dùng được, nhắn gửi lại vẫn chỉ có một lần gọi đổi. Chuyển nhân viên kèm dữ liệu lần gửi. |
+| Ca bình thường | Pass logic C1 và C2 | Chưa tích ô duyệt thì chưa gọi đổi. Duyệt hợp lệ gửi một lần, kết quả thành công cập nhật vé. |
+
+Các kiểm tra bổ sung đã chạy thành công gồm chọn riêng người lớn, trẻ bay riêng, thiếu chỗ, yêu cầu tạm dừng, hỏi thông tin hoàn, nội dung chat có ký tự HTML và bắt đầu lại trong lúc xử lý. Bộ kiểm tra cũng xác minh tám ca #1 và #4–#10 được nạp đúng bối cảnh, cùng việc đặt lại dữ liệu khi chuyển ca.
+
+Đồng hồ kiểm thử có điều khiển xác minh countdown bắt đầu tại 20:00, còn 01:00 sau 19 giây thật và tự hết hạn sau 20 giây thật. Các kiểm tra logic này đã chạy thành công. Kiểm tra đồng hồ tăng tốc xác minh bộ đếm bắt đầu 20:00, còn 01:00 sau 19 giây thật và tự hết hạn sau 20 giây thật bằng đồng hồ kiểm thử có điều khiển.
+
+**Giới hạn còn lại:** kiểm tra giao diện trên trình duyệt và ảnh chụp chưa hoàn thành vì công cụ truy cập trình duyệt báo host không khả dụng. Backend thật, trạng thái giao dịch trên nhiều thiết bị, việc chống lặp phía máy chủ và kết quả xử lý của nhân viên chưa có trong prototype. Hai ca #2/#3 có tab riêng. Tám ca #1 và #4–#10 đã được thêm vào tab “Ca bình thường”, với bối cảnh và phản hồi tương ứng. Ca #1 cập nhật BM 205 từ 4 xuống 1 chỗ, ca #7 giữ lịch sử thẻ BM 201 và yêu cầu duyệt mới cho BM 205. Các ca còn lại kiểm tra hỏi lại, tạm dừng, phạm vi hỗ trợ, dữ liệu giờ đến, thông tin hoàn và chuyến gốc đã huỷ.
 
 ## §7. Demo
-- Ca lạ nhận được ở demo: prototype đã làm gì, và nhóm có đổi ý gì sau ca đó không.
-```
+
+### Ca #2 — khách xác nhận sau khi giữ hết hạn
+
+1. Chọn “Ca #2 · Giữ chỗ hết hạn”. Giới thiệu chuyến BM 213 bị huỷ và đặt chỗ có hai hành khách.
+2. Giữ BM 201 cho cả hai. Chỉ ra mốc giữ, hết hạn và cảnh báo lần đổi miễn phí duy nhất.
+3. Bấm “Quay lại sau 25 phút”, sau đó “Tôi quay lại xác nhận”. Thẻ cũ vẫn hiện trong chat và nút đổi bị khoá.
+4. Bấm “② Tra cứu lại”, chọn BM 201 và duyệt thẻ mới để kết thúc ca. Giải thích xác nhận phải đi cùng điều kiện giữ chỗ còn hiệu lực.
+
+### Ca #3 — mất phản hồi sau khi gửi lệnh đổi
+
+1. Chọn “Ca #3 · Mất phản hồi đổi vé”. Kiểm tra ô mất phản hồi đang bật, chọn BM 205 cho cả hai.
+2. Duyệt bản tóm tắt và gửi đổi. Trợ lý chuyển sang “Đang xác minh kết quả”.
+3. Bấm “Gửi đổi lần nữa” hoặc nhập tin nhắn yêu cầu thử lại. Trợ lý nhắc lần gửi đầu đang được xác minh và giữ khoá đổi tiếp.
+4. Mở nhật ký, chỉ ra một lần `doi_chuyen_bay` cùng `chuyen_nhan_vien`. Giải thích vì sao thêm xác nhận của khách chưa giải quyết được phần kết quả giao dịch còn thiếu.
+
+### Ca bình thường để đối chiếu
+
+Chọn “Ca bình thường” để hiện 8 nút #1 và #4–#10. Bấm từng nút để mở lại đúng bối cảnh và tin nhắn khách trong §2. Nút “Bắt đầu lại” chạy lại ca đang chọn. Để đối chiếu nhánh thành công, bấm “Mở luồng đổi vé thành công”, giữ chuyến đủ chỗ và duyệt trong thời hạn. Hai ca #2/#3 vẫn có tab riêng.
+
+### Ca lạ luyện tập
+
+Tin khách dự kiến là “Tôi đã xác nhận BM 201 ở điện thoại, giờ đổi BM 205 trên máy tính thì dùng xác nhận cũ nhé”. AI yêu cầu duyệt đúng BM 205 cùng hành khách trên bản tóm tắt mới. Bản duyệt cũ hết hiệu lực khi thay lựa chọn. Khi triển khai nhiều thiết bị thật, còn cần kiểm tra yêu cầu đang xử lý ở phía máy chủ.
+
+Quyết định giữ lại sau ca luyện tập là gắn duyệt với thẻ giữ cụ thể và khoá đổi mới nếu lần gửi trước chưa rõ kết quả. Ca này chưa phải ca lạ thực tế từ TA.
+
+**Phân công trình bày đề xuất:** một thành viên trình bày rủi ro và câu AI nói ở §2–§3, một thành viên giải thích mức tự chủ ở §4, một thành viên bấm demo và trình bày kết quả kiểm tra ở §5–§6. Nhóm cần điền tên thật và việc đã làm ở bảng đầu bài.
+
+**Phân công trình bày:**
+
+- **Chử Thị Ánh:** trình bày phạm vi, các kịch bản rủi ro và lý do chọn hai ca đắt nhất (§1–§2).
+- **Nguyễn Thế Cường:** giải thích cách AI phản hồi khi sai, mức tự chủ của từng tool và cái giá của quyết định sai (§3–§4).
+- **Hoàng Ngọc Minh Trí:** thao tác prototype qua hai ca khó, chỉ ra các nguyên tắc HAX/PAIR trên giao diện và điều phối phần xử lý ca lạ (§5 và demo).
+
+**Ghi nhận sau demo thực tế:** bổ sung câu hỏi nguyên văn, người đưa ca, giao diện thực sự đã làm gì, kết quả theo C1–C3 và quyết định nhóm sửa sau ca đó. Chưa có dữ liệu để ghi nhận phần này đã hoàn thành.
