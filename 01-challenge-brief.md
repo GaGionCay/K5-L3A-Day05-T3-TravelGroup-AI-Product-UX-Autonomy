@@ -34,7 +34,7 @@ Lát cắt đã **phát sẵn** trong từng track. Nhóm không chọn lại; n
 
 ## Ràng buộc chung
 
-1. Build **prototype 1–2 màn hình** bấm được (Lovable, v0.dev, Figma, HTML — tuỳ nhóm) cho ca khó nhất. Có **≥1 lời gọi AI chạy thật** là bonus, không bắt buộc.
+1. Build **prototype 1–2 màn hình** bấm được (Lovable, v0.dev, Figma, một coding agent như Claude, Codex hoặc Gemini, HTML — tuỳ nhóm) cho ca khó nhất. Có **≥1 lời gọi AI chạy thật** là bonus, không bắt buộc.
 2. Tự xác định **4 lớp chỗ khó** cho lát cắt của mình:
    - ① **Nguồn sự thật** — chỗ nào AI bịa được? Không có căn cứ thì làm gì?
    - ② **Mơ hồ / thiếu thông tin** — input không đủ chắc: hỏi lại, đoán có báo, hay từ chối?

@@ -22,7 +22,7 @@ Bài nộp cần **danh sách thành viên** và **mỗi người làm gì**. Nh
 
 ## Chuẩn bị trước buổi lab
 
-- Nhóm đã chọn sẵn một công cụ dựng prototype: Lovable, v0.dev, Figma, hoặc chỉ cần trình duyệt nếu làm HTML.
+- Người dựng prototype đã đăng ký sẵn một công cụ: Lovable, v0.dev, Figma, một coding agent như Claude, Codex hoặc Gemini, hoặc chỉ cần trình duyệt nếu làm HTML.
 - Không cần chatbot hay API key: đây là bài **thiết kế**, không chạy agent.
 
 ## Bắt đầu từ đâu?

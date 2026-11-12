@@ -146,7 +146,7 @@ Rồi **thử mức vừa đặt** trên **2 kịch bản đắt nhất và 1 k�
 ## 5.2 Ràng buộc
 
 - **1–2 màn hình**, cho ca khó nhất. Dữ liệu giả, không đăng nhập, không backend. Không cần đẹp.
-- Công cụ tuỳ nhóm: Lovable, v0.dev, Figma, một file HTML. Đăng ký tài khoản công cụ **trước giờ lab**.
+- Công cụ tuỳ nhóm: Lovable, v0.dev, Figma, một coding agent như Claude, Codex hoặc Gemini, hoặc một file HTML. Đăng ký tài khoản công cụ **trước giờ lab**.
 - Có ≥1 lời gọi AI thật thì là bonus; nếu có, chỉ đưa dữ liệu dựng vào và **không để API key trong code nộp**.
 - Mẫu của giảng viên: `prototype-sample/index.html` (ca "đổi sang sáng mai" của T3). Xem 3 phút để biết "đủ" trông thế nào, rồi đóng lại. **Nhóm T3 chọn một ca khó khác cho prototype của mình.**
 - **Kẹt kỹ thuật quá 20 phút: gọi TA.** Không dựng được thì vẽ tay 2 màn hình rồi chụp lại: mất điểm "bấm qua được", vẫn được chấm các phần còn lại của R5.
