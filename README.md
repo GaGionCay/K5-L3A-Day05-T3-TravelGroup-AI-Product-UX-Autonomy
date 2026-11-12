@@ -10,9 +10,9 @@ Bài nộp cần **danh sách thành viên** và **mỗi người làm gì**. Nh
 
 | Họ và Tên | Mã Học Viên | Việc đã làm |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Hoàng Ngọc Minh Trí | 2A202603379 |  |
+| Nguyễn Thế Cường | 2A202603355 |  |
+| Chừ Thị ÁNh | 2A202603360 |  |
 
 > Copy bảng này lên đầu `spec.md` và điền. Ghi cụ thể việc mỗi người làm — khi demo, ai cũng có thể bị hỏi về phần có tên mình.
 
