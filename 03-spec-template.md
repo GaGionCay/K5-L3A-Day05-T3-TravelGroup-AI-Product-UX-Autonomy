@@ -6,7 +6,7 @@
 
 ```markdown
 # Bài nộp LAB5 — [Track] · Nhóm [tên]
-[Bảng thành viên & phân công từ README — 3 người]
+[Danh sách thành viên và việc mỗi người làm — copy bảng từ README]
 
 ## §1. Lát cắt & phạm vi
 - Lát cắt (chép từ track).

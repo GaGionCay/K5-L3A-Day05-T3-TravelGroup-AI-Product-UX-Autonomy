@@ -15,7 +15,7 @@
 
 **Một quyết định = bốn ý.** Ở mọi chặng, mỗi khi nhóm chọn một thứ (một kịch bản để khoanh, một câu AI nói, một mức tự chủ, một chỗ trên màn hình), ghi lại: **đã cân nhắc những phương án nào · chọn phương án nào · vì sao · loại các phương án kia vì sao**, và **bằng chứng** (tool nào, dòng dữ liệu nào của track, điều gì trong mục "Sản phẩm thật hôm nay", hay chỗ nào trên prototype). Bài này là bài thiết kế: không chạy agent, bằng chứng là lập luận trỏ về một chỗ cụ thể. Đây là phần được chấm điểm nhiều nhất.
 
-**Chia việc (nhóm 3 người).** Người A dựng prototype · người B viết câu chữ AI cho từng trạng thái · người C giữ bảng kịch bản, mức tự chủ và kịch bản demo. Chặng 1–4 cả nhóm cùng làm; từ chặng 5 mỗi người giữ phần của mình. Ai cũng phải giải thích được phần có tên mình.
+**Chia việc (nhóm 3 người).** Nhóm tự chia việc, không bắt buộc theo vai trò cố định. Bài nộp cần danh sách thành viên và mỗi người làm gì. Chặng 1–4 cả nhóm cùng làm thì tốt hơn; từ chặng 5 mỗi người giữ phần mình nhận. Ai cũng phải giải thích được phần có tên mình.
 
 ---
 

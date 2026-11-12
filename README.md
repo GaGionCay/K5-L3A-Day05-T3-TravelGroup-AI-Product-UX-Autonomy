@@ -2,17 +2,19 @@
 
 **Kịch bản → Khi sai → Mức tự chủ → Prototype → Demo.** Đây không phải bài thi code — đây là bài tập **tư duy sản phẩm AI**: khi AI không chắc hoặc sai thì người dùng thấy gì, và AI được tự làm tới đâu.
 
-## 👥 Thành viên nhóm & Phân công vai trò
+## Thành viên nhóm
+
+Bài nộp cần **danh sách thành viên** và **mỗi người làm gì**. Nhóm tự chia việc, không bắt buộc theo vai trò cố định. Ví dụ một cách chia (không bắt buộc): dựng prototype, viết câu chữ AI, giữ bảng kịch bản và kịch bản demo.
 
 **Lớp:** ____ · **Bàn / zone:** ____ · **Track:** ____
 
-| Họ và Tên | Mã Học Viên | Vai trò chính | Phần việc đảm nhiệm |
-|---|---|---|---|
-|  |  | Dựng prototype |  |
-|  |  | Viết câu chữ AI cho từng trạng thái |  |
-|  |  | Giữ bảng kịch bản và mức tự chủ, viết kịch bản demo |  |
+| Họ và Tên | Mã Học Viên | Việc đã làm |
+|---|---|---|
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
-> Nhóm copy bảng này lên đầu bài nộp và điền. Mỗi người ghi càng cụ thể càng tốt — khi demo, ai cũng có thể bị hỏi về phần có tên mình.
+> Copy bảng này lên đầu `spec.md` và điền. Ghi cụ thể việc mỗi người làm — khi demo, ai cũng có thể bị hỏi về phần có tên mình.
 
 - Thời lượng: **240 phút**, trong một buổi lab. L3A: 12/11/2026 · L3B: 13/11/2026.
 - Nhóm: **đúng 3 người**, cùng một track, nộp **một** bài.
@@ -20,7 +22,7 @@
 
 ## Chuẩn bị trước buổi lab
 
-- Người dựng prototype đã đăng ký sẵn một công cụ: Lovable, v0.dev, Figma, hoặc chỉ cần trình duyệt nếu làm HTML.
+- Nhóm đã chọn sẵn một công cụ dựng prototype: Lovable, v0.dev, Figma, hoặc chỉ cần trình duyệt nếu làm HTML.
 - Không cần chatbot hay API key: đây là bài **thiết kế**, không chạy agent.
 
 ## Bắt đầu từ đâu?
